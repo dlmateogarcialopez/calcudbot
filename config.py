@@ -8,7 +8,9 @@ VERSION = 0.1
 TELEGRAM_TOKEN = config('TELEGRAM_TOKEN')
 #########################################################
 
+#crear objeto bot
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
+
 # Determina el nivel de los mensajes que se van a mostrar (debug)
 telebot.logger.setLevel(logging.INFO)
 #########################################################

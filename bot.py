@@ -5,7 +5,13 @@ from time import sleep
 import re
 #########################################################
 # Aquí vendrá la implementación de la lógica del bot
+@bot.message_handler(commands=['ping'])
+def on_command_ping(message):
+    bot.send_message(
+        message.chat.id,
+        "pongg",
+        parse_mode="Markdown") 
 #########################################################
 if __name__ == '__main__':
-bot.polling(timeout=20)
+    bot.polling(timeout=20)
 #########################################################
